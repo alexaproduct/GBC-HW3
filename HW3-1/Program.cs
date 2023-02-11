@@ -8,3 +8,5 @@ for (int i = 1; i <= N; i++)
     Console.WriteLine($"{i} x {i} x {i} = {i*i*i}");
 }
 Console.WriteLine();
+
+
