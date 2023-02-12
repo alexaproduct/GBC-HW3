@@ -1,15 +1,15 @@
 ﻿// Задача 5 - Написать программу вычисления произведения чисел от 1 до N
 
-
-// Найти сумму чисел от 1 до А
-
 Console.WriteLine("Введите A: ");
-int A = int.Parse(Console.ReadLine());
+decimal A = decimal.Parse(Console.ReadLine());
 
-int result = 1;
-
-for (int i = 1; i <= A; i++)
+if (A>27) Console.WriteLine("Введите число меньше 27 включительно");
+else
 {
-    result = result*i;
+    decimal result = 1;
+    for (int i = 1; i <= A; i++)
+    {
+        result = result*i;
+    }
+    Console.WriteLine(result);
 }
-Console.WriteLine(result);
