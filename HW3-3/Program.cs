@@ -6,6 +6,11 @@ int A = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите B: ");
 int B = int.Parse(Console.ReadLine());
 
-double pow = Math.Pow(A, B);
+int power = 1;
 
-Console.WriteLine(pow);
+for (int i = 1; i <= B; i++)
+{
+    power = power * A;
+}
+
+Console.WriteLine(power);
